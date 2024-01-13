@@ -8,6 +8,7 @@ return {
 	},
 	config = function()
 		vim.keymap.set("n", "<leader>e", ":Neotree filesystem toggle left<CR>", {})
+		vim.keymap.set("n", "<leader>gg", ":Neotree float git_status<CR>", {})
 		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
 	end,
 }
