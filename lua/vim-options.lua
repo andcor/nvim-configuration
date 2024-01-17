@@ -15,6 +15,7 @@ vim.keymap.set('n', '<leader>-', ':split<CR>')
 
 vim.keymap.set('n', '<leader>sa', ':wa<CR>')
 vim.keymap.set('n', '<leader>qsa', ':wqa<CR>')
+vim.keymap.set('n', '<leader>cd', ':lcd %:p:h<CR>:pwd<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
