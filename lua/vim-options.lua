@@ -6,6 +6,9 @@ vim.g.mapleader = " "
 vim.cmd("set number relativenumber")
 vim.cmd("set clipboard=unnamedplus")
 vim.cmd("lua vim.bo.undofile = true")
+vim.g.background = "light"
+
+vim.opt.swapfile = false
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
