@@ -5,6 +5,7 @@ return {
       "~/work/*",
       "~/.config/nvim",
       "~/.config/tmux",
+      "~/.sshfs/*"
     },
   },
   init = function()

@@ -4,6 +4,8 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
 vim.cmd("set number relativenumber")
+vim.cmd("set clipboard=unnamedplus")
+vim.cmd("lua vim.bo.undofile = true")
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
@@ -18,5 +20,11 @@ vim.keymap.set('n', '<leader>qsa', ':wqa<CR>')
 vim.keymap.set('n', '<leader>cd', ':lcd %:p:h<CR>:pwd<CR>')
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+vim.keymap.set('n', '<C-v>', "ciw<C-r>0<ESC>")
+
+vim.cmd("noremap <expr> j v:count ? 'j' : 'gj'")
+vim.cmd("noremap <expr> k v:count ? 'k' : 'gk'")
+
 vim.wo.number = true
 
