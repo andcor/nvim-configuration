@@ -8,7 +8,12 @@ vim.cmd("set clipboard=unnamedplus")
 vim.cmd("lua vim.bo.undofile = true")
 vim.g.background = "light"
 
+vim.cmd("set backupdir=~/.cache/vim/backup//")
+vim.cmd("set directory=~/.cache/vim/swap//")
+vim.cmd("set undodir=~/.cache/vim/undo//")
+
 vim.opt.swapfile = false
+vim.opt.cursorline = true
 
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
